@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.N.A. Cursos - Portal de Atividades</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --fundo: #0d0d0d;
+      --texto: #f0f0f0;
+      --destaque: #00ffff;
+      --secundaria: #ff0066;
+      --cinza: #2e2e2e;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--cinza);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid var(--destaque);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--destaque);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--texto);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--destaque);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #111 30%, #222);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+      color: var(--destaque);
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--secundaria);
+      border-bottom: 2px solid var(--destaque);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--destaque);
+    }
+
+    footer {
+      background-color: var(--cinza);
+      color: #999;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">D.N.A. Cursos</div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#aulas">Aulas Gravadas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Imagem de fundo poderá ser adicionada aqui futuramente -->
+    <h1>Desenvolva Novas Conquistas</h1>
+    <p>Portal oficial para alunos e professores da escola D.N.A.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a D.N.A.</h2>
+    <p>A D.N.A. é um dojo digital dedicado ao desenvolvimento técnico, criativo e estratégico, com foco em jogos de luta, conteúdo digital e cultura de superação.</p>
+  </section>
+
+  <section id="atividades">
+    <h2>Atividades Recentes</h2>
+    <ul>
+      <li><strong>08/05/2025:</strong> Treino prático de okizeme com Vega (SFV)</li>
+      <li><strong>07/05/2025:</strong> Exercício de leitura de quadro neutro em KOF XV</li>
+      <li><strong>06/05/2025:</strong> Revisão teórica - Hit Confirm & Whiff Punish</li>
+    </ul>
+  </section>
+
+  <section id="aulas">
+    <h2>Aulas Gravadas</h2>
+    <p>Disponibilizaremos aqui os links para as gravações de aulas importantes:</p>
+    <ul>
+      <li><a href="#">Aula 01 - Introdução à Mentalidade Competitiva</a></li>
+      <li><a href="#">Aula 02 - Estrutura de Combate em Street Fighter</a></li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Para dúvidas ou inscrições, envie um e-mail para <a href="mailto:alanius@dnacursos.com.br">contato@dnacursos.com.br</a> ou fale diretamente com nossos professores nos grupos oficiais.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 D.N.A. - Desenvolva Novas Conquistas</p>
+  </footer>
+</body>
+</html>

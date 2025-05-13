@@ -4,6 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D.N.A. Cursos - Portal de Atividades</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --fundo: #0d0d0d;
+      --texto: #f0f0f0;
+      --destaque: #00ffff;
+      --secundaria: #ff0066;
+      --cinza: #2e2e2e;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--cinza);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid var(--destaque);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--destaque);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--texto);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--destaque);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #111 30%, #222);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+      color: var(--destaque);
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--secundaria);
+      border-bottom: 2px solid var(--destaque);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--destaque);
+    }
+
+    footer {
+      background-color: var(--cinza);
+      color: #999;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
